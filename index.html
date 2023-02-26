@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;;
+}
+
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    background: skyblue;
+}
+
+.innerbox {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    padding: 50px 50px;
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(82, 172, 245);
+    z-index: 2;
+    
+}
+
+.signupHeader h1{
+    font-size: 2.5rem;
+    color: #31343a!;
+}
+
+.signupHeader p{
+    font-size: 0.8rem;
+    color: #555;
+    padding: 5px 0px;    
+}
+
+.signupBody{
+    margin: 20px 0;    
+}
+
+.signupBody p{
+    margin: 10px 0px;
+}
+
+.signupBody p label{
+    display:block;
+    font-weight: 900;
+}
+
+.signupBody p input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #cccc;
+}
+
+.signupBody p #submitButton {
+    border: none;
+    background-color: skyblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.signupBody p input[type="submit"] :hover {
+    background-color: greenyellow;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a{
+    color: skyblue;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background:linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.c1{
+    top: 100px;
+    left: 40px;
+}
+
+.c2{
+    bottom: 200px;
+    right: 50px ;
+}
+    </style>
+</head>
+<body>
+    <div class="outerbox">
+        <div class="innerbox">
+            <header class="signupHeader">
+                <h1>Signup</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+            <main class="signupBody">
+                <form action="#">
+                    <p>
+                        <label for="">Name</label> <input id="name" type="text" required placeholder="enter your full name">
+                    </p>
+                    <p>
+                        <label for="emailId">Email Id</label> <input id="emailId" type="email" required placeholder="enter your email id">
+                    </p>
+                    <p>
+                        <label for="password">Password</label> <input id="password" type="password" required placeholder="enter 8 characters password">
+                    </p>
+                    <p>
+                        <input id="submitButton" value="Create Account" type="submit">
+                    </p>
+                </form>
+            </main>
+
+            <footer class="signUpFooter">
+                <p>Already have an Account? <a href="#">Login</a></p>
+            </footer>
+            
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+</body>
+</html>
